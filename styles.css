@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div.boxwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    opacity: 0.7;
+    transition: all 0.3s ease; /* Smooth transition for hover effect*/
+}
+
+.box:hover {
+    transform: scale(1.1); /*Use 'transform' properly to scale*/
+    opacity: 1;
+}
+
+.box p {
+    color: white;
+    padding: 5px 10px;
+    background-color: #6f4616;
+    border-radius: 50%; /*make the border radius 50% for circular shape*/
+    box-shadow: 5px 5px 5px inset black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.box p:active {
+    transform: scale(1.2);
+}
+
+.box1 {
+    background-color:  #344e41;
+    flex: 1;
+}
+
+.box2 {
+    background-color: #3a5a40;
+    flex: 2; /*Example of using 'flex' properly with different value*/
+}
+
+.box3 {
+    background-color: #588157;
+    flex: 1.5;
+}
+
+.box4 {
+    background-color: #5a9f68;
+    flex: 2.5;
+}
+
+.box5 {
+    background-color: #bbd58e;
+    flex: 1.2;
+}
+
+.flextest {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
